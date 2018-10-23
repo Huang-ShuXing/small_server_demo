@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>small_server_demo</groupId>
+    <artifactId>com.hsx</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>discovery</module>
+        <module>config</module>
+        <module>ui</module>
+        <module>person</module>
+        <module>some</module>
+        <module>monitor</module>
+    </modules>
+
+    <properties>
+        <hystrix.version>1.4.6.RELEASE</hystrix.version>
+        <zuul.version>1.4.6.RELEASE</zuul.version>
+        <feign.version>1.4.6.RELEASE</feign.version>
+        <ribbon.version>1.4.6.RELEASE</ribbon.version>
+        <hystrix.dashboard.version>1.4.6.RELEASE</hystrix.dashboard.version>
+        <turbine.version>1.4.6.RELEASE</turbine.version>
+        <eureka.version>1.4.6.RELEASE</eureka.version>
+        <data.jpa.version>2.0.6.RELEASE</data.jpa.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-parent</artifactId>
+        <version>Finchley.RELEASE</version>
+
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>
